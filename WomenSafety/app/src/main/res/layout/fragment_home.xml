@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:mpb_progressStyle="horizontal"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:id="@+id/add_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:foregroundGravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/addcontact"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/show_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:background="@drawable/family"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:text="Family"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/family_contact1"
+                    android:text="7624069124"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/family_contact2"
+                    android:text="7624069124"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:background="@drawable/friends"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:text="Friends"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/friend_contact1"
+                    android:text="7624069124"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/friend_contact2"
+                    android:text="7624069124"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/l1"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction"
+        android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contact"
+        android:layout_marginBottom="-5dp"
+        android:text="Activate" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:text="Contact"
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

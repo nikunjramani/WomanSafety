@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Women Safety</string>
+    <string name="title_activity_homepage">homepage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Map</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="login_preference">com.nikunjramani.lapshop_login_preference</string>
+    <string name="login_status_preference">com.nikunjramani.lapshop_login_status_preference</string>
+    <string name="homepage_view">test</string>
+    <string name="home_second">Home Second</string>
+    <string name="ok_text">ok</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_account">Account</string>
+    <string name="title_activity_account">account</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="logout">logout</string>
+    <string name="map">Map</string>
+    <string name="view_location">View Location</string>
+    <string name="instruction">Hello, \n  please read this to know about women safety application. This app is designed to provide security to women. You can activate this service by clicking on activate service button. When you click on this button service get activated and whenever you need press the button which are available at your main screen. Whenever you click on that button your location and mesaage send to the your registered contacts. Your location is sending after every 5 minutes untill you are not deactivate the service button.please ensure that all details you are filled is corrected.</string>
+</resources>
