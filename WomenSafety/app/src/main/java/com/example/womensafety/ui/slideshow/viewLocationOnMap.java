@@ -82,6 +82,7 @@ public class viewLocationOnMap extends AppCompatActivity implements OnMapReadyCa
         getDirection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
                 if (ActivityCompat.checkSelfPermission(viewLocationOnMap.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(viewLocationOnMap.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     return;
@@ -113,4 +114,5 @@ public class viewLocationOnMap extends AppCompatActivity implements OnMapReadyCa
             }
         });
     }
+
 }
